@@ -29,7 +29,7 @@ def create_app():
     app.register_blueprint(auth, url_prefix="/")
 
     # Import the User and Post model
-    from .models import User, Post
+    from .models import User, Post, Comment, Like
 
     # Create the database
     create_database(app)
